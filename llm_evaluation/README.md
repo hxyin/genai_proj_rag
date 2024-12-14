@@ -2,8 +2,12 @@
 # README
 
 ## Introduction
+This project introduces an advanced evaluation framework for RAG Systems that significantly improves upon existing open-source methodologies. Our framework achieves:
 
-This project provides a script for evaluating LLMs using a custom evaluation framework that builds upon and improves existing open-source methodologies. Our evaluation focuses on enhancing metrics through advanced techniques like **In-context learning** and **Few-shot learning**, achieving results superior to open-source benchmarks. This framework is designed to facilitate reproducibility of results and seamless integration with Vertex AI.
+- **Superior Accuracy**: Consistently outperforms standard open-source benchmarks
+- **Reduced Variance**: Significantly lower variance in evaluation metrics compared to baseline methods
+- **Enhanced Reproducibility**: Structured approach ensuring consistent results across evaluations
+
 
 ## Prerequisites
 
@@ -70,10 +74,14 @@ The evaluation framework introduces enhancements to key metrics, including:
    Optimized prompts and examples for more accurate evaluations.
 
 - **Few-shot learning**:  
-   Adjustments to sampling and scoring methods for enhanced benchmarking.
+   - Adjustments to sampling and scoring methods for enhanced benchmarking
+   - More consistent performance across diverse test cases
+   - Better handling of edge cases and complex scenarios
 
 These modifications are implemented in `factualcorrectness_revise.py` and automatically integrated into the main notebook.
 
 ## Notes
 - Ensure your environment is correctly configured before running the scripts.
 - For detailed implementation of metrics and logic, refer to the comments within `factualcorrectness_revise.py`.
+- The evaluation results demonstrate consistently lower variance compared to existing frameworks, making our approach more reliable for production use.
+- Our framework's improved stability makes it particularly suitable for continuous evaluation pipelines where consistent results are crucial.
