@@ -8,6 +8,8 @@ This project introduces an advanced evaluation framework for RAG Systems that si
 - **Reduced Variance**: Significantly lower variance in evaluation metrics compared to baseline methods
 - **Enhanced Reproducibility**: Structured approach ensuring consistent results across evaluations
 
+The image below shows the overview of our optimization method.
+![](./images/flow.jpg)
 
 ## Prerequisites
 
