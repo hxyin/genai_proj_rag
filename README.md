@@ -35,11 +35,17 @@ This project introduces an advanced evaluation framework for RAG Systems that si
 
 ## File Structure
 
-- `llm_result_evaluation.ipynb`:  
+- `retrieval_evalulation.ipynb`:
+  The implementation of the retrieval system, including Vector-based Retrieval, BM25 Retrieval and Hybrid Retrieval.
+
+- `./llm_evaluation/llm_result_evaluation.ipynb`:  
    The main evaluation script that integrates all components of the framework. This notebook orchestrates the evaluation workflow.
 
-- `factualcorrectness_revise.py`:  
+- `./llm_evaluation/factualcorrectness_revise.py`:  
    The core script that defines custom metrics and evaluation logic. Significant modifications have been made to existing open-source frameworks to improve accuracy and flexibility.
+
+- `./llm_evaluation/evaluation_plots`:
+   The t-validation metrics (factual correctness, faithfulness, semantic similarity) of the three different retrieval strategies.
 
 - Other supporting files:  
    Additional scripts in the directory provide utility functions and support for various evaluation tasks. All files are referenced within the notebook and should remain in the same directory.
@@ -64,9 +70,10 @@ This project introduces an advanced evaluation framework for RAG Systems that si
    Replace `path/to/your/auth.json` with the actual path to your JSON file.
 
 ### Step 3: Run the Evaluation
-1. Open `llm_result_evaluation.ipynb` in a Jupyter Notebook environment.
+1. Open `./llm_evaluation/llm_result_evaluation.ipynb` in a Jupyter Notebook environment.
 2. Execute the notebook cells sequentially. The notebook will automatically load and use the supporting files in the directory.
 3. The evaluation results, including metrics and comparisons, will be generated within the notebook.
+4. Open and execute `retrieval_evalulation.ipynb` in a Jupyter Notebook environment to run and test the three different retrieval strategies and generate the corresponding results.
 
 ### Custom Metrics
 The evaluation framework introduces enhancements to key metrics, including:
